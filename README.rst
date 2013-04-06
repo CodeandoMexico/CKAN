@@ -1,4 +1,5 @@
 CKAN: The Open Source Data Portal Software
+A fork from Codeando Mexico to make an open and accesible endpoint for data around the country.
 ==========================================
 
 .. image:: https://secure.travis-ci.org/okfn/ckan.png?branch=master
