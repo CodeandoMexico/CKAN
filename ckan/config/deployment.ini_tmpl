@@ -122,7 +122,7 @@ package_form = standard
 ckan.site_title = CKAN
 
 ## Logo image to use on the home page
-ckan.site_logo = /base/images/ckan-logo.png
+ckan.site_logo = /base/images/cmx-logo.png
 
 ## Site tagline / description (used on front page)
 ckan.site_description = DataSuite
