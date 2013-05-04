@@ -1,6 +1,6 @@
 {% block header %}
 {% block header_account %}
-  <header class="account-masthead">
+  <header class="account-masthead submenu">
     <div class="container">
       {% if c.userobj %}
         <div class="account avatar authed" data-module="me" data-me="{{ c.userobj.id }}">
@@ -52,7 +52,7 @@
     </div>
   </header>
 {% endblock %}
-<header class="masthead">
+<header class="masthead main-header">
   {% block header_debug %}
   {% if g.debug and not g.debug_supress_header %}
     <div class="debug">Controller : {{ c.controller }}<br/>Action : {{ c.action }}</div>
@@ -78,7 +78,7 @@
     <div class="content">
 
       {% block header_site_navigation %}
-        <nav class="section navigation">
+        <nav class="section navigation menu">
           <ul class="nav nav-pills">
             {% block header_site_navigation_tabs %}
             {{ h.build_nav_main(

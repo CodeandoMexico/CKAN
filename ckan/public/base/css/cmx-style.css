@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+	margin: 0px;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-size: 12pt;
+	font-weight: normal;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.submenu {
+	background: #656565;
+	background: -moz-linear-gradient(top, #656565 0%, #3e3e3e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#656565), color-stop(100%,#3e3e3e));
+	background: -webkit-linear-gradient(top, #656565 0%,#3e3e3e 100%);
+	background: -o-linear-gradient(top, #656565 0%,#3e3e3e 100%);
+	background: -ms-linear-gradient(top, #656565 0%,#3e3e3e 100%);
+	background: linear-gradient(to bottom, #656565 0%,#3e3e3e 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#656565', endColorstr='#3e3e3e',GradientType=0 );
+	padding: 16px 0px;
+}
+
+.submenu-nav {
+	float: right;
+}
+
+.account-masthead .account ul li a {
+	color: #fff;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0px 10px;
+	position: relative;
+}
+
+.main-header {
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #d3e4f4 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#d3e4f4));
+	background: -webkit-linear-gradient(top, #ffffff 0%,#d3e4f4 100%);
+	background: -o-linear-gradient(top, #ffffff 0%,#d3e4f4 100%);
+	background: -ms-linear-gradient(top, #ffffff 0%,#d3e4f4 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#d3e4f4 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3e4f4',GradientType=0 );
+	padding: 20px 0px 20px 0px
+}
+
+.logo {
+	height: 40px;
+	position: relative;
+}
+
+.menu {
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+
+.menu a {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #78ba4a;
+	text-decoration: none;
+	padding: 35px 20px;
+	border-right: 1px solid #c9d4d8;
+}
+
+.menu .nav-pills > li > a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.landscape {
+	background: url(/base/images/cmx-home.jpg);
+	text-align: center;
+}
+
+.hero-primary {
+  color: #fff;
+}
+
+.quote {
+	color: #fff;
+	font-size: 1.8em;
+	margin: 10px 0px 20px 0px;
+}
+
+.quote span {
+	font-weight: 100;
+}
+
+.search-container {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.search-container .search {
+	padding: 30px 100px 30px 20px;
+	width: 500px;
+	border: none;
+	box-shadow: 0px 0px 0px 7px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	font-size: 1em;
+}
+
+.send-btn {
+	padding: 20px 40px;
+	position: absolute;
+	right: 0px;
+	top: 8px;
+	background: #69b136;
+	border-radius: 5px;
+	color: #fff;
+	text-shadow: 0px 2px 0px #467127;
+	font-size: 1em;
+	font-weight: 500;
+	border: 1px solid #62983b;
+	box-shadow: inset 2px 2px 1px #9cdc53;
+	display: block;
+}
+
+.send-btn:hover {
+	opacity: 0.9;
+	cursor: pointer;
+}
+
+.home a {
+	color: #fff;
+	margin-top: 30px;
+	display: block;
+}
+
