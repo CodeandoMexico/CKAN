@@ -96,16 +96,53 @@ ckan.gravatar_default = identicon
 ckan.preview.direct = png jpg gif
 ckan.preview.loadable = html htm rdf+xml owl+xml xml n3 n-triples turtle plain atom csv tsv rss txt json
 
-# package_hide_extras = for_search_index_only
-#package_edit_return_url = http://another.frontend/dataset/<NAME>
-#package_new_return_url = http://another.frontend/dataset/<NAME>
-#ckan.recaptcha.publickey =
-#ckan.recaptcha.privatekey =
-#licenses_group_url = http://licenses.opendefinition.org/licenses/groups/ckan.json
-# ckan.template_footer_end =
+## Solr support
+#solr_url = http://127.0.0.1:8983/solr
 
+## Automatic indexing. Make all changes immediately available via the search
+## after editing or creating a dataset. Default is true. If for some reason
+## you need the indexing to occur asynchronously, set this option to 0.
+# ckan.search.automatic_indexing = 1
 
-## Internationalisation Settings
+## An 'id' for the site (using, for example, when creating entries in a common search index) 
+## If not specified derived from the site_url
+# ckan.site_id = ckan.net
+
+## API url to use (e.g. in AJAX callbacks)
+## Enable if the API is at a different domain
+# ckan.api_url = http://www.ckan.net
+
+## html content to be inserted just before </head> tag (e.g. extra stylesheet)
+## NB: can use html e.g. <strong>blah</strong>
+## NB: can have multiline strings just indent following lines
+ckan.template_head_end = <link rel="stylesheet" href="/base/css/cmx-style.css" type="text/css">
+
+## html content to be inserted just before </body> tag (e.g. google analytics code)
+## NB: can use html e.g. <strong>blah</strong>
+## NB: can have multiline strings just indent following lines
+# ckan.template_footer_end = 
+
+# These three settings (ckan.log_dir, ckan.dump_dir and ckan.backup_dir) are
+# all used in cron jobs, not in CKAN itself. CKAN logging is configured 
+# in the logging configuration below
+# Directory for logs (produced by cron scripts associated with ckan)
+ckan.log_dir = %(here)s/log
+# Directory for JSON/CSV dumps (must match setting in apache config)
+ckan.dump_dir = %(here)s/dump
+# Directory for SQL database backups
+ckan.backup_dir = %(here)s/backup
+
+# Default authorizations for new domain objects
+#ckan.default_roles.Package = {"visitor": ["reader"], "logged_in": ["reader"]}
+#ckan.default_roles.Group = {"visitor": ["reader"], "logged_in": ["reader"]}
+#ckan.default_roles.System = {"visitor": ["reader"], "logged_in": ["editor"]}
+#ckan.default_roles.AuthorizationGroup = {"visitor": ["reader"], "logged_in": ["reader"]}
+
+## Ckan public and private recaptcha keys [localhost]
+#ckan.recaptcha.publickey = 
+#ckan.recaptcha.privatekey = 
+
+# Locale/languages
 ckan.locale_default = en
 ckan.locale_order = en pt_BR ja it cs_CZ ca es fr el sv sr sr@latin no sk fi ru de pl nl bg ko_KR hu sa sl lv
 ckan.locales_offered =
