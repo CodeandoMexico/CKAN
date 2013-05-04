@@ -119,13 +119,13 @@ package_form = standard
 # ckan.simple_search = 1
 
 ## Title of site (using in several places including templates and <title> tag
-ckan.site_title = CKAN
+ckan.site_title = Abriendo México
 
 ## Logo image to use on the home page
 ckan.site_logo = /base/images/cmx-logo.png
 
 ## Site tagline / description (used on front page)
-ckan.site_description = DataSuite
+ckan.site_description = La plataforma cívica de datos abiertos de México
 
 ## Used in creating some absolute urls (such as rss feeds, css files) and 
 ## dump filenames
