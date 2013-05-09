@@ -6,7 +6,7 @@
 
 body {
 	font-family: 'Open Sans';
-	font-size: 12pt;
+	font-size: 10pt;
 	font-weight: normal;
 }
 
@@ -15,7 +15,7 @@ body {
 	width: 960px;
 }
 
-.submenu {
+.submenu-background {
 	background: #656565;
 	background: -moz-linear-gradient(top, #656565 0%, #3e3e3e 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#656565), color-stop(100%,#3e3e3e));
@@ -24,11 +24,14 @@ body {
 	background: -ms-linear-gradient(top, #656565 0%,#3e3e3e 100%);
 	background: linear-gradient(to bottom, #656565 0%,#3e3e3e 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#656565', endColorstr='#3e3e3e',GradientType=0 );
-	padding: 16px 0px;
 }
 
 .submenu-nav {
 	float: right;
+}
+
+.account-masthead .account {
+  padding-right: 23px;
 }
 
 .account-masthead .account ul li a {
@@ -49,12 +52,19 @@ body {
 	background: -ms-linear-gradient(top, #ffffff 0%,#d3e4f4 100%);
 	background: linear-gradient(to bottom, #ffffff 0%,#d3e4f4 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d3e4f4',GradientType=0 );
-	padding: 20px 0px 20px 0px
+}
+
+.masthead .content {
+  top: 0px;
 }
 
 .logo {
 	height: 40px;
 	position: relative;
+}
+
+.logo img {
+  padding: 10px 0;
 }
 
 .menu {
@@ -64,18 +74,29 @@ body {
 }
 
 .menu a {
-	font-weight: bold;
-	font-size: 1.2em;
-	color: #78ba4a;
-	text-decoration: none;
-	padding: 35px 20px;
-	border-right: 1px solid #c9d4d8;
+  font-weight: bold;
+  color: #12102b;
+  text-decoration: none;
+  padding: 35px 20px;
+  border-right: 1px solid #c9d4d8;
+}
+
+.menu a.left {
+	border-left: 1px solid #c9d4d8;
 }
 
 .menu .nav-pills > li > a {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+  padding: 30px 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+  background: transparent;
+  color: #78ba4a;
 }
 
 .landscape {
