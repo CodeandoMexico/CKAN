@@ -119,13 +119,13 @@ package_form = standard
 # ckan.simple_search = 1
 
 ## Title of site (using in several places including templates and <title> tag
-ckan.site_title = CKAN
+ckan.site_title = Abriendo México
 
 ## Logo image to use on the home page
-ckan.site_logo = /base/images/ckan-logo.png
+ckan.site_logo = /base/images/cmx-logo.png
 
 ## Site tagline / description (used on front page)
-ckan.site_description = DataSuite
+ckan.site_description = La plataforma de datos abiertos de México
 
 ## Used in creating some absolute urls (such as rss feeds, css files) and 
 ## dump filenames
@@ -158,7 +158,7 @@ ckan.gravatar_default = identicon
 ## html content to be inserted just before </head> tag (e.g. extra stylesheet)
 ## NB: can use html e.g. <strong>blah</strong>
 ## NB: can have multiline strings just indent following lines
-# ckan.template_head_end = <link rel="stylesheet" href="http://mysite.org/css/custom.css" type="text/css"> 
+ckan.template_head_end = <link rel="stylesheet" href="/base/css/cmx-style.css" type="text/css">
 
 ## html content to be inserted just before </body> tag (e.g. google analytics code)
 ## NB: can use html e.g. <strong>blah</strong>
@@ -186,7 +186,7 @@ ckan.backup_dir = %(here)s/backup
 #ckan.recaptcha.privatekey = 
 
 # Locale/languages
-ckan.locale_default = en
+ckan.locale_default = es
 #ckan.locales_offered = 
 # Languages are grouped by percentage of strings in CKAN 1.8 translated
 # (those with 100% first, then those with >=80%, then >=50%, then <50%) and

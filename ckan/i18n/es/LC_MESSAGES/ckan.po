@@ -462,7 +462,7 @@ msgstr "Se ha restablecido su contraseña."
 
 #: ckan/controllers/user.py:437
 msgid "Error: Could not parse About text"
-msgstr "Error: No se ha podido interpretar el texto \"Acerca de\""
+msgstr "Error: No se ha podido interpretar el texto \"Acerca\""
 
 #: ckan/controllers/user.py:445
 msgid "Your password must be 4 characters or longer."
@@ -750,6 +750,10 @@ msgstr "Recursos"
 #: ckanext/publisher_form/templates/dataset_form.html:124
 msgid "Groups"
 msgstr "Grupos"
+
+#: ckan/templates/header.html:86
+msgid "Organizations"
+msgstr "Organizaciones"
 
 #: ckan/forms/package.py:98 ckan/forms/package.py:105
 msgid "Detail"
@@ -1949,7 +1953,7 @@ msgstr "Búsqueda"
 #: ckan/templates/home/about.html:9 ckan/templates/user/edit_user_form.html:39
 #: ckan/templates/user/read.html:28
 msgid "About"
-msgstr "Acerca de "
+msgstr "Acerca"
 
 #: ckan/templates/layout_base.html:94
 msgid "Page Logo"
