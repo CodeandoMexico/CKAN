@@ -780,7 +780,11 @@ msgstr "Clave de restablecimiento no válida. Por favor, inténtalo de nuevo."
 msgid "Your password has been reset."
 msgstr "Se ha restablecido su contraseña."
 
-#: ckan/controllers/user.py:490
+#: ckan/controllers/user.py:437
+msgid "Error: Could not parse About text"
+msgstr "Error: No se ha podido interpretar el texto \"Acerca\""
+
+#: ckan/controllers/user.py:445
 msgid "Your password must be 4 characters or longer."
 msgstr "Su contraseña debe tener 4 caracteres o más."
 
@@ -911,150 +915,135 @@ msgstr "{actor} comenzó a seguir a {group}"
 
 #: ckan/lib/activity_streams.py:142
 msgid ""
-"{actor} added the {related_type} {related_item} to the dataset {dataset}"
-msgstr "{actor} actualizó el {related_type} {related_item} del conjunto de datos {dataset}"
+"It is often displayed with the package title. In particular, it should start"
+" with a short sentence that describes the data set succinctly, because the "
+"first few words alone may be used in some views of the data sets."
+msgstr "Con frecuencia se muestra en el título del paquete. En particular, debería comenzar con una frase corta que describa sucintamente el conjunto de datos, ya que sólo las primera palabras pudieran ser mostradas en algunas de las vistas."
 
-#: ckan/lib/activity_streams.py:145
-msgid "{actor} added the {related_type} {related_item}"
-msgstr "{actor} actualizó {related_type} {related_item}"
+#: ckan/forms/package.py:83
+#, python-format
+msgid "You can use %sMarkdown formatting%s here."
+msgstr "Aquí puedes utilizar %sMarkdown formatting%s."
 
-#: ckan/lib/email_notifications.py:103
-msgid "1 new activity from {site_title}"
-msgid_plural "{n} new activities from {site_title}"
-msgstr[0] "1 nueva actividad de {site_title}"
-msgstr[1] "{n} nuevas actividades de {site_title}"
+#: ckan/forms/package.py:94
+msgid "Basic information"
+msgstr "Información básica"
 
-#: ckan/lib/formatters.py:17
-msgid "January"
-msgstr "Enero"
+#: ckan/forms/package.py:96 ckan/forms/package.py:111
+#: ckan/logic/__init__.py:81 ckan/logic/action/__init__.py:58
+#: ckan/templates/package/layout.html:19
+#: ckan/templates/package/read_core.html:26
+msgid "Resources"
+msgstr "Recursos"
 
-#: ckan/lib/formatters.py:21
-msgid "February"
-msgstr "Febrero"
+#: ckan/forms/package.py:97 ckan/templates/layout_base.html:78
+#: ckan/templates/package/new_package_form.html:93
+#: ckan/templates/package/read.html:49 ckan/templates/package/search.html:26
+#: ckan/templates/revision/read.html:64
+#: ckanext/publisher_form/templates/dataset_form.html:124
+msgid "Groups"
+msgstr "Grupos"
 
-#: ckan/lib/formatters.py:25
-msgid "March"
-msgstr "Marzo"
+#: ckan/templates/header.html:86
+msgid "Organizations"
+msgstr "Organizaciones"
 
-#: ckan/lib/formatters.py:29
-msgid "April"
-msgstr "Abril"
+#: ckan/forms/package.py:98 ckan/forms/package.py:105
+msgid "Detail"
+msgstr "Detalles"
 
-#: ckan/lib/formatters.py:33
-msgid "May"
-msgstr "Mayo"
+#: ckan/forms/package.py:110 ckan/templates/_util.html:69
+#: ckan/templates/_util.html:82 ckan/templates/_util.html:95
+#: ckan/templates/group/new_group_form.html:22
+#: ckan/templates/package/new_package_form.html:36
+#: ckan/templates/related/add-related.html:18
+#: ckanext/organizations/templates/organization_form.html:22
+#: ckanext/organizations/templates/organization_package_form.html:34
+#: ckanext/publisher_form/templates/dataset_form.html:31
+msgid "Title"
+msgstr "Título"
 
-#: ckan/lib/formatters.py:37
-msgid "June"
-msgstr "Junio"
+#: ckan/forms/package.py:110 ckan/templates/package/new_package_form.html:224
+#: ckan/templates/package/read_core.html:78
+#: ckanext/organizations/templates/organization_package_form.html:232
+#: ckanext/publisher_form/templates/dataset_form.html:178
+msgid "Version"
+msgstr "Versión"
 
-#: ckan/lib/formatters.py:41
-msgid "July"
-msgstr "Julio"
+#: ckan/forms/package.py:110 ckan/templates/related/add-related.html:38
+msgid "URL"
+msgstr "URL"
 
-#: ckan/lib/formatters.py:45
-msgid "August"
-msgstr "Agosto"
+#: ckan/forms/package.py:111 ckan/templates/group/history.html:32
+#: ckan/templates/package/history.html:25
+#: ckan/templates/package/new_package_form.html:194
+#: ckan/templates/package/read_core.html:68
+#: ckan/templates/snippets/revision_list.html:11
+#: ckanext/organizations/templates/organization_history.html:32
+#: ckanext/organizations/templates/organization_package_form.html:202
+#: ckanext/publisher_form/templates/dataset_form.html:164
+msgid "Author"
+msgstr "Autor"
 
-#: ckan/lib/formatters.py:49
-msgid "September"
-msgstr "Septiembre"
+#: ckan/forms/package.py:111 ckan/templates/package/new_package_form.html:202
+#: ckanext/organizations/templates/organization_package_form.html:210
+#: ckanext/publisher_form/templates/dataset_form.html:168
+msgid "Author email"
+msgstr "Email del autor"
 
-#: ckan/lib/formatters.py:53
-msgid "October"
-msgstr "Octubre"
+#: ckan/forms/package.py:111 ckan/templates/package/new_package_form.html:209
+#: ckan/templates/package/read_core.html:73
+#: ckanext/organizations/templates/organization_package_form.html:217
+#: ckanext/publisher_form/templates/dataset_form.html:171
+msgid "Maintainer"
+msgstr "Mantenedor"
 
-#: ckan/lib/formatters.py:57
-msgid "November"
-msgstr "Noviembre"
+#: ckan/forms/package.py:112 ckan/templates/package/new_package_form.html:217
+#: ckanext/organizations/templates/organization_package_form.html:225
+#: ckanext/publisher_form/templates/dataset_form.html:175
+msgid "Maintainer email"
+msgstr "Email del mantenedor"
 
-#: ckan/lib/formatters.py:61
-msgid "December"
-msgstr "Diciembre"
+#: ckan/forms/package.py:112 ckan/templates/package/new_package_form.html:73
+#: ckanext/organizations/templates/organization_package_form.html:71
+#: ckanext/publisher_form/templates/dataset_form.html:72
+msgid "License"
+msgstr "Licencia"
 
-#: ckan/lib/formatters.py:82
-msgid "Just now"
-msgstr "Justo ahora"
+#: ckan/forms/package.py:112 ckan/templates/group/new_group_form.html:54
+#: ckan/templates/package/read_core.html:88
+#: ckanext/organizations/templates/organization_form.html:54
+#: ckanext/publisher_form/templates/publisher_form.html:68
+msgid "State"
+msgstr "Estado"
 
-#: ckan/lib/formatters.py:84
-msgid "{mins} minute ago"
-msgid_plural "{mins} minutes ago"
-msgstr[0] "hace {mins} minuto"
-msgstr[1] "hace {mins} minutos "
+#: ckan/forms/package_dict.py:95
+#, python-format
+msgid "Resource should be a dictionary: %r"
+msgstr "El recursos debe ser un diccionario: %r"
 
-#: ckan/lib/formatters.py:87
-msgid "{hours} hour ago"
-msgid_plural "{hours} hours ago"
-msgstr[0] "hace {hours} hora"
-msgstr[1] "hace {hours} horas"
+#: ckan/forms/package_dict.py:112
+#, python-format
+msgid "Key unknown: %s"
+msgstr "Clave desconocida: %s"
 
-#: ckan/lib/formatters.py:91
-msgid "{days} day ago"
-msgid_plural "{days} days ago"
-msgstr[0] "hace {days} día"
-msgstr[1] "hace {days} días"
+#: ckan/forms/package_dict.py:114
+msgid "Key blank"
+msgstr "Clave vacía"
 
-#: ckan/lib/formatters.py:98
-msgid "{month} {day}, {year}"
-msgstr "{month} {day}, {year}"
+#: ckan/lib/base.py:520
+msgid "Updated"
+msgstr "Actualizado"
 
-#: ckan/lib/formatters.py:115
-msgid "{bytes} bytes"
-msgstr "{bytes} bytes"
+#: ckan/lib/base.py:532
+msgid "User role(s) added"
+msgstr "Rol(es) de usuario(s) añadido"
 
-#: ckan/lib/formatters.py:117
-msgid "{kibibytes} KiB"
-msgstr "{kibibytes} KiB"
+#: ckan/lib/base.py:534
+msgid "Please supply a user name"
+msgstr "Por favor introduzca un nombre de usuario"
 
-#: ckan/lib/formatters.py:119
-msgid "{mebibytes} MiB"
-msgstr "{mebibytes} MiB"
-
-#: ckan/lib/formatters.py:121
-msgid "{gibibytes} GiB"
-msgstr "{gibibytes} GiB"
-
-#: ckan/lib/formatters.py:123
-msgid "{tebibytes} TiB"
-msgstr "{tebibytes} TiB"
-
-#: ckan/lib/formatters.py:135
-msgid "{n}"
-msgstr "{n}"
-
-#: ckan/lib/formatters.py:137
-msgid "{k}k"
-msgstr "{k}k"
-
-#: ckan/lib/formatters.py:139
-msgid "{m}M"
-msgstr "{m}M"
-
-#: ckan/lib/formatters.py:141
-msgid "{g}G"
-msgstr "{g}G"
-
-#: ckan/lib/formatters.py:143
-msgid "{t}T"
-msgstr "{t}T"
-
-#: ckan/lib/formatters.py:145
-msgid "{p}P"
-msgstr "{p}P"
-
-#: ckan/lib/formatters.py:147
-msgid "{e}E"
-msgstr "{e}E"
-
-#: ckan/lib/formatters.py:149
-msgid "{z}Z"
-msgstr "{z}Z"
-
-#: ckan/lib/formatters.py:151
-msgid "{y}Y"
-msgstr "{y}Y"
-
-#: ckan/lib/helpers.py:712
+#: ckan/lib/helpers.py:482
 msgid "Update your avatar at gravatar.com"
 msgstr "Actualiza tu avatar en gravatar.com"
 
@@ -4432,7 +4421,22 @@ msgstr "Encuentra conjuntos de datos"
 msgid "Add a dataset"
 msgstr "Añada un conjunto de datos"
 
-#: ckan/templates_legacy/layout_base.html:94
+#: ckan/templates/layout_base.html:77
+#: ckan/templates/package/search_form.html:10 ckan/templates/tag/index.html:13
+#: ckan/templates/user/list.html:14
+#: ckanext/publisher_form/templates/publisher_read.html:53
+#: ckanext/publisher_form/templates/publisher_read.html:57
+msgid "Search"
+msgstr "Búsqueda"
+
+#: ckan/templates/layout_base.html:79 ckan/templates/layout_base.html:137
+#: ckan/templates/layout_base.html:140 ckan/templates/home/about.html:6
+#: ckan/templates/home/about.html:9 ckan/templates/user/edit_user_form.html:39
+#: ckan/templates/user/read.html:28
+msgid "About"
+msgstr "Acerca"
+
+#: ckan/templates/layout_base.html:94
 msgid "Page Logo"
 msgstr "Logo de la página"
 
