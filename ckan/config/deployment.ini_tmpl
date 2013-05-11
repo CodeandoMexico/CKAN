@@ -78,7 +78,8 @@ ckan.site_logo = /base/images/cmx-logo.png
 ckan.site_description = La plataforma de datos abiertos de México
 
 
-## Plugins Settings
+## Favicon (default is the CKAN software favicon)
+ckan.favicon = /images/icons/cmx.ico
 
 # Note: Add ``datastore`` to enable the CKAN DataStore
 #       Add ``pdf_preview`` to enable the resource preview for PDFs
