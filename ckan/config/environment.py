@@ -159,7 +159,7 @@ def load_environment(global_conf, app_conf):
         config['ckan.site_id'] = ckan_host
 
     # ensure that a favicon has been set
-    favicon = config.get('ckan.favicon', '/images/icons/ckan.ico')
+    favicon = config.get('ckan.favicon', '/images/icons/cmx.ico')
     config['ckan.favicon'] = favicon
 
     # Init SOLR settings and check if the schema is compatible

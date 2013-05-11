@@ -132,7 +132,7 @@ ckan.site_description = La plataforma de datos abiertos de México
 ckan.site_url =
 
 ## Favicon (default is the CKAN software favicon)
-ckan.favicon = /images/icons/ckan.ico
+ckan.favicon = /images/icons/cmx.ico
 
 ## The gravatar default to use.  This can be any of the pre-defined strings
 ## as defined on http://en.gravatar.com/site/implement/images/ (e.g. "identicon"
