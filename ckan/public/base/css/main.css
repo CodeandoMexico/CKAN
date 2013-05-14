@@ -7415,7 +7415,7 @@ h4 small {
   *zoom: 1;
   min-height: 55px;
   color: #ffffff;
-  background: #005d7a url("../../../base/images/bg.png");
+  background: #333 url("../../../base/images/bg.png");
   padding: 20px 0;
 }
 .site-footer:before,
@@ -7962,7 +7962,7 @@ h4 small {
   margin: 3px 0;
 }
 body {
-  background: #005d7a url("../../../base/images/bg.png");
+  background: #333 url("../../../base/images/bg.png");
 }
 [hidden] {
   display: none;
