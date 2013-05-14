@@ -6,6 +6,8 @@
           <ul class="unstyled">
             {% block footer_links %}
               <li><a href="{{ h.url_for(controller='home', action='about') }}">{{ _('Acerca de {0}').format(g.site_title) }}</a></li>
+              <li><a href="mailto:equipo@codeandomexico.org">Escr&iacute;benos</a></li>
+              <li>Tuitea <a href="https://twitter.com/codeandomexico" target="_blank">@CodeandoMexico</a></li>
             {% endblock %}
           </ul>
           <ul class="unstyled">
