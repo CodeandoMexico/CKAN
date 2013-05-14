@@ -119,7 +119,7 @@ package_form = standard
 # ckan.simple_search = 1
 
 ## Title of site (using in several places including templates and <title> tag
-ckan.site_title = Abriendo México
+ckan.site_title = Datos Abiertos de México
 
 ## Logo image to use on the home page
 ckan.site_logo = /base/images/cmx-logo.png
