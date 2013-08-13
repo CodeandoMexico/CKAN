@@ -3,4 +3,4 @@
 	url = git://github.com/okfn/sphinx-theme-okfn.git
 [submodule "chef-ckan"]
 	path = chef-ckan
-	url = https://github.com/wilhelmbot/chef-ckan.git
+	url = https://github.com/CodeandoMexico/chef-ckan.git
