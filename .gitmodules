@@ -1,3 +1,6 @@
 [submodule "doc/_themes/sphinx-theme-okfn"]
 	path = doc/_themes/sphinx-theme-okfn
 	url = https://github.com/okfn/sphinx-theme-okfn.git
+[submodule "chef-ckan"]
+	path = chef-ckan
+	url = https://github.com/CodeandoMexico/chef-ckan.git
